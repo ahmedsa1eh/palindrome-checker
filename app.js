@@ -36,3 +36,10 @@ const palindromeChecker = function () {
 };
 
 checkBtn.addEventListener("click", checkUserInput);
+document.addEventListener("keydown", function(e){
+    if(e.key == 'Enter')
+    {
+        checkUserInput();
+    }
+});
+
